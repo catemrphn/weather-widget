@@ -1,0 +1,39 @@
+.widget-wrapper {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    padding: 10px;
+    background: #c0d0b5;
+}
+
+.widget-wrapper:nth-child(2n) {
+    background: #EBEBEB;
+}
+
+.close-widget {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-widget span {
+    width: 10px;
+    height: 2px;
+    display: inline-block;
+    background: #000;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.close-widget span:first-of-type {
+    transform: rotateZ(45deg);
+}
+
+.close-widget span:last-of-type {
+    transform: rotateZ(-45deg);
+}
+
+.cities-name {
+    font-weight: 700;
+    font-size: 22px;
+}

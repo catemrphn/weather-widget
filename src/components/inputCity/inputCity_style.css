@@ -1,0 +1,58 @@
+input {
+    cursor: pointer;
+}
+
+.input {
+    max-width: 980px;
+    margin: 0 auto 40px;
+    display: flex;
+}
+
+.input__container {
+    position: relative;
+}
+
+.input__submit {
+    background-color: #77a97b;
+    border: none;
+    color: white;
+    padding: 13px 32px;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.input__container input {
+    width: 250px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 12px 10px;
+    outline: none;
+    border: 1px solid #888;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.input__container label {
+    font-size: 14px;
+    line-height: 18px;
+    width: 250px;
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    color: #888;
+    pointer-events: none;
+    transition-duration: 200ms;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.input__container input:focus + label, .input__container input:valid + label {
+    top: 1px;
+    font-size: 9px;
+}
